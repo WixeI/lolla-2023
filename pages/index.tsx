@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
+import { RxHamburgerMenu } from "react-icons/rx";
+import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 
@@ -14,6 +15,134 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header className="flex items-center justify-between bg-white py-2 px-4 drop-shadow-lg md:container md:mx-auto">
+        {/* Information */}
+        <div className="flex items-center gap-3">
+          <img className="h-[min(2.5rem,_10vw)]" src="/logo-lolla.png" alt="Lollapalooza 10ª Edição Brasil" />
+          <div>
+            <p className="text-sm">24, 25 e 26 de março de 2023</p>
+            <p className="text-sm">São Paulo</p>
+          </div>
+        </div>
+        {/* Hamburguer Menu */}
+        <button
+          className="flex lg:hidden"
+          data-drawer-target="drawer-example"
+          data-drawer-show="drawer-example"
+          aria-controls="drawer-example"
+        >
+          <RxHamburgerMenu size="1.5rem" />
+        </button>
+        {/* Drawer Component */}
+        <div
+          id="drawer-example"
+          className="fixed top-0 left-0 z-40 h-screen w-80 -translate-x-full overflow-y-auto bg-white p-4 transition-transform dark:bg-gray-800"
+          tabIndex={-1}
+          aria-labelledby="drawer-label"
+        >
+          <h5
+            id="drawer-label"
+            className="mb-4 inline-flex items-center text-base font-semibold text-gray-500 dark:text-gray-400"
+          >
+            <svg
+              className="mr-2 h-5 w-5"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            Info
+          </h5>
+          <button
+            type="button"
+            data-drawer-hide="drawer-example"
+            aria-controls="drawer-example"
+            className="absolute top-2.5 right-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
+          >
+            <svg
+              aria-hidden="true"
+              className="h-5 w-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span className="sr-only">Close menu</span>
+          </button>
+        </div>
+        {/* Navigation Menu */}
+        <NavigationMenu.Root className="hidden lg:inline">
+          <NavigationMenu.List className="flex space-x-4">
+            <NavigationMenu.Item>
+              <NavigationMenu.Trigger>Produtos</NavigationMenu.Trigger>
+              <NavigationMenu.Content className="absolute">
+                <ul>
+                  <li>
+                    <p>Merchan</p>
+                  </li>
+                  <li>
+                    <p>Lockers</p>
+                  </li>
+                  <li>
+                    <p>Pacotes de Viagem</p>
+                  </li>
+                  <li>
+                    <p>Transfer</p>
+                  </li>
+                  <li>
+                    <p>Slideshows</p>
+                  </li>
+                </ul>
+              </NavigationMenu.Content>
+            </NavigationMenu.Item>
+
+            <NavigationMenu.Item>
+              <NavigationMenu.Trigger>Informações</NavigationMenu.Trigger>
+              <NavigationMenu.Content className="absolute">
+                <ul>
+                  <li>
+                    <NavigationMenu.Link href="https://github.com/radix-ui">FAQ</NavigationMenu.Link>
+                  </li>
+                  <li>
+                    <NavigationMenu.Link href="https://github.com/radix-ui">Entrada Social</NavigationMenu.Link>
+                  </li>
+                </ul>
+              </NavigationMenu.Content>
+            </NavigationMenu.Item>
+
+            <NavigationMenu.Item>
+              <NavigationMenu.Trigger>Experiência</NavigationMenu.Trigger>
+              <NavigationMenu.Content className="absolute">
+                <ul>
+                  <li>
+                    <NavigationMenu.Link href="https://github.com/radix-ui">O Festival</NavigationMenu.Link>
+                  </li>
+                </ul>
+              </NavigationMenu.Content>{" "}
+            </NavigationMenu.Item>
+
+            <NavigationMenu.Item>
+              <NavigationMenu.Link href="https://github.com/radix-ui">Contato</NavigationMenu.Link>
+            </NavigationMenu.Item>
+
+            <NavigationMenu.Item>
+              <NavigationMenu.Link href="https://github.com/radix-ui">Ingressos</NavigationMenu.Link>
+            </NavigationMenu.Item>
+          </NavigationMenu.List>
+        </NavigationMenu.Root>
+      </header>
+
       <main className={styles.main}>
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
       </main>
