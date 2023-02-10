@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 @layer utilities {
-  .no-flow-center {
-    top: 50%;
+  .no-flow-x-center {
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%);
+  }
+  .no-flow-y-center {
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
