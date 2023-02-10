@@ -14,11 +14,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="flex items-center justify-between bg-white py-2 px-4 drop-shadow-lg md:container md:mx-auto">
+      <header className="no-flow-x-center fixed flex w-full items-center justify-between bg-white py-2 px-4 drop-shadow-lg md:container md:mx-auto md:mt-2">
         {/* Information */}
         <div className="flex items-center gap-3">
           <img className="h-[min(2.5rem,_10vw)]" src="/logo-lolla.png" alt="Lollapalooza 10ª Edição Brasil" />
-          <div>
+          <div className="font-semibold">
             <p className="text-sm">24, 25 e 26 de março de 2023</p>
             <p className="text-sm">São Paulo</p>
           </div>
@@ -128,10 +128,6 @@ export default function Home() {
           </NavigationMenu.List>
         </NavigationMenu.Root>
       </header>
-
-      <main className={styles.main}>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      </main>
     </>
   );
 }
