@@ -131,10 +131,10 @@ export default function Home() {
 
       <main>
         {/* Lineup Section */}
-        <section className="bg-[url('/background-blue-sun.jpg')] bg-center pt-[15vh]">
+        <section className="bg-[url('/background-blue-sun.jpg')] bg-fixed bg-center pt-[15vh]">
           {/* Announcement & Lineup */}
           <div className="container mx-auto mb-8 xl:px-[10vw]">
-            <img src="header-content-1080p.png" className="mx-auto mb-[max(2rem,8vw)]" />
+            <img src="header-content-1080p.png" className="mx-auto mb-[clamp(2rem,8vw,4rem)]" />
             <div className="mx-auto grid grid-cols-7 content-center px-4 pb-4">
               <img src="lineup-style-left.png" className="hidden sm:block" />
               <img src="lineup-content.png" className="col-span-full justify-self-center sm:col-span-5" />
