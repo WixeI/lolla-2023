@@ -129,16 +129,21 @@ export default function Home() {
         </NavigationMenu.Root>
       </header>
 
-      <main className=" bg-[url('/background-blue-sun.jpg')] bg-center pt-[15vh]">
-        <div className="container mx-auto mb-8 xl:px-[10vw]">
-          <img src="header-content-1080p.png" className="mx-auto" />
-          <div className="mx-auto grid grid-cols-7 content-center px-4 pb-4">
-            <img src="lineup-style-left.png" />
-            <img src="lineup-content.png" className="col-span-5 justify-self-center" />
-            <img src="lineup-style-right.png" />
+      <main>
+        {/* Lineup Section */}
+        <section className="bg-[url('/background-blue-sun.jpg')] bg-center pt-[15vh]">
+          {/* Announcement & Lineup */}
+          <div className="container mx-auto mb-8 xl:px-[10vw]">
+            <img src="header-content-1080p.png" className="mx-auto" />
+            <div className="mx-auto grid grid-cols-7 content-center px-4 pb-4">
+              <img src="lineup-style-left.png" />
+              <img src="lineup-content.png" className="col-span-5 justify-self-center" />
+              <img src="lineup-style-right.png" />
+            </div>
           </div>
-        </div>
-        <div className="bottom-0 left-0 right-0 h-36 bg-[url('/background-row-city.png')] bg-top bg-repeat-x" />
+          {/* City BG */}
+          <div className="bottom-0 left-0 right-0 h-36 bg-[url('/background-row-city.png')] bg-top bg-repeat-x" />
+        </section>
       </main>
     </>
   );
