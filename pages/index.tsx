@@ -18,9 +18,9 @@ export default function Home() {
         {/* Information */}
         <div className="flex items-center gap-3">
           <img className="h-[min(2.5rem,_10vw)]" src="/logo-lolla.png" alt="Lollapalooza 10ª Edição Brasil" />
-          <div className="font-semibold">
-            <p className="text-sm">24, 25 e 26 de março de 2023</p>
-            <p className="text-sm">São Paulo</p>
+          <div className="text-xs font-semibold sm:text-sm">
+            <p>24, 25 e 26 de março de 2023</p>
+            <p className="hidden sm:block">São Paulo</p>
           </div>
         </div>
         {/* Mobile Navigation Menu */}
@@ -134,16 +134,20 @@ export default function Home() {
         <section className="bg-[url('/background-blue-sun.jpg')] bg-center pt-[15vh]">
           {/* Announcement & Lineup */}
           <div className="container mx-auto mb-8 xl:px-[10vw]">
-            <img src="header-content-1080p.png" className="mx-auto" />
+            <img src="header-content-1080p.png" className="mx-auto mb-[max(2rem,8vw)]" />
             <div className="mx-auto grid grid-cols-7 content-center px-4 pb-4">
-              <img src="lineup-style-left.png" />
-              <img src="lineup-content.png" className="col-span-5 justify-self-center" />
-              <img src="lineup-style-right.png" />
+              <img src="lineup-style-left.png" className="hidden sm:block" />
+              <img src="lineup-content.png" className="col-span-full justify-self-center sm:col-span-5" />
+              <img src="lineup-style-right.png" className="hidden sm:block" />
             </div>
           </div>
           {/* City BG */}
           <div className="bottom-0 left-0 right-0 h-36 bg-[url('/background-row-city.png')] bg-top bg-repeat-x" />
         </section>
+        {/* Our Products Section */}
+        {/* Check Everything that Happened */}
+        {/* Lolla is Global */}
+        {/* Footer */}
       </main>
     </>
   );
