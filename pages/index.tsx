@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="no-flow-x-center fixed flex w-full items-center justify-between bg-white py-2 px-4 drop-shadow-lg md:container md:mx-auto md:mt-2">
+      <header className="no-flow-x-center fixed z-10 flex w-full items-center justify-between bg-white py-2 px-4 drop-shadow-lg md:container md:mx-auto md:mt-2">
         {/* Information */}
         <div className="flex items-center gap-3">
           <img className="h-[min(2.5rem,_10vw)]" src="/logo-lolla.png" alt="Lollapalooza 10ª Edição Brasil" />
@@ -131,7 +131,7 @@ export default function Home() {
 
       <main>
         {/* Lineup Section */}
-        <section className="bg-[url('/background-blue-sun.jpg')] bg-fixed bg-center pt-[min(10vw,8rem)]">
+        <section className="bg-[url('/background-blue-sun.jpg')] bg-fixed bg-center pt-[clamp(5rem,15vw,8rem)]">
           {/* Announcement & Lineup */}
           <div className="container mx-auto mb-8 xl:px-[10vw]">
             <img src="header-content-1080p.png" className="mx-auto mb-[clamp(2rem,8vw,4rem)]" />
@@ -149,8 +149,8 @@ export default function Home() {
           </div>
         </section>
         {/* Our Products Section */}
-        <section className="bg-[#03af99] pt-[min(20vw,8rem)]">
-          <div className="container mx-auto">
+        <div className="bg-[#03af99] pt-[min(20vw,8rem)]">
+          <section className="container mx-auto">
             <h1>Conheça Nossos Produtos</h1>
             <ul>
               <li>
@@ -172,9 +172,11 @@ export default function Home() {
                 </a>
               </li>
             </ul>
-          </div>
-        </section>
-        {/* Check Everything that Happened */}
+          </section>
+          {/* Check Everything that Happened */}
+          <section></section>
+        </div>
+
         {/* Lolla is Global */}
         {/* Footer */}
       </main>
