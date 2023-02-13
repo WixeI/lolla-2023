@@ -141,9 +141,9 @@ export default function Home() {
               <img src="lineup-style-right.png" className="hidden sm:block" />
             </div>
           </div>
-          {/* City BG */}
+          {/* City BG & Section Divider */}
           <div className="h-36 bg-[url('/background-row-city.png')] bg-top bg-repeat-x" />
-          <div className="mt-2 flex h-2 items-center justify-center gap-[20%] bg-[url('/bg-line-divider.png')] bg-contain bg-repeat-x">
+          <div className="flex h-1 items-center justify-center gap-[20%] bg-[url('/bg-line-divider.png')] bg-cover bg-repeat-x">
             <img src="icon-rollerskates.png" className="mb-8 h-[min(25vw,7rem)]" />
             <img src="icon-old-player.png" className="hidden h-[min(20vw,4.5rem)] sm:block" />
           </div>
