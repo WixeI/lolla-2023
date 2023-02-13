@@ -131,7 +131,7 @@ export default function Home() {
 
       <main>
         {/* Lineup Section */}
-        <section className="bg-[url('/background-blue-sun.jpg')] bg-fixed bg-center pt-[15vh]">
+        <section className="bg-[url('/background-blue-sun.jpg')] bg-fixed bg-center pt-[min(10vw,8rem)]">
           {/* Announcement & Lineup */}
           <div className="container mx-auto mb-8 xl:px-[10vw]">
             <img src="header-content-1080p.png" className="mx-auto mb-[clamp(2rem,8vw,4rem)]" />
@@ -143,13 +143,37 @@ export default function Home() {
           </div>
           {/* City BG & Section Divider */}
           <div className="h-36 bg-[url('/background-row-city.png')] bg-top bg-repeat-x" />
-          <div className="flex h-1 items-center justify-center gap-[20%] bg-[url('/bg-line-divider.png')] bg-cover bg-repeat-x">
+          <div className="relative flex h-1 items-center justify-center gap-[30%] bg-[#00A5D9] bg-[url('/bg-line-divider.png')] bg-cover bg-repeat-x md:h-2">
             <img src="icon-rollerskates.png" className="mb-8 h-[min(25vw,7rem)]" />
             <img src="icon-old-player.png" className="hidden h-[min(20vw,4.5rem)] sm:block" />
           </div>
         </section>
-
         {/* Our Products Section */}
+        <section className="bg-[#03af99] pt-[min(20vw,8rem)]">
+          <div className="container mx-auto">
+            <h1>Conheça Nossos Produtos</h1>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="merch-style.png" />
+                  <span>Merch</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="lolla-lockers-style.png" />
+                  <span>Lolla Lockers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="pacotes-de-viagem-style.png" />
+                  <span>Pacotes de Viagem</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
         {/* Check Everything that Happened */}
         {/* Lolla is Global */}
         {/* Footer */}
