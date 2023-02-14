@@ -148,35 +148,35 @@ export default function Home() {
             <img src="icon-old-player.png" className="hidden h-[min(20vw,4.5rem)] sm:block" />
           </div>
         </section>
-        {/* Our Products Section */}
-        <div className="bg-[#03af99] pt-[min(20vw,8rem)]">
-          <section className="container mx-auto">
-            <h1 className="font-outline-1 font-lalezar text-4xl text-white drop-shadow-[3px_3px_0px_black]">
-              Conheça Nossos Produtos
+
+        <div className="bg-[#03af99] pt-[min(20vw,6rem)]">
+          {/* Our Products Section */}
+          <section className="container mx-auto mb-16">
+            <h1 className="font-outline-1 mb-8 text-center font-lalezar text-[clamp(2rem,6vw,3.5rem)] uppercase leading-none text-white drop-shadow-[3px_3px_0px_black]">
+              Conheça nossos produtos
             </h1>
-            <ul>
+            <ul className="mx-[12.5%] grid justify-center gap-[clamp(1rem,5vw,3rem)] sm:grid-cols-3 xl:mx-[18%]">
               <li>
-                <a href="#">
-                  <img src="merch-style.png" />
-                  <span>Merch</span>
+                <a href="#" className="flex flex-col items-center gap-1">
+                  <img src="merch-style.png" className="w-[clamp(50%,30vw,200px)]" />
+                  <span className="text-center text-2xl font-semibold">Merch</span>
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="lolla-lockers-style.png" />
-                  <span>Lolla Lockers</span>
+                <a href="#" className="flex flex-col items-center gap-1">
+                  <img src="lolla-lockers-style.png" className="w-[clamp(50%,30vw,200px)]" />
+                  <span className="text-center text-2xl font-semibold">Lolla Lockers</span>
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <img src="pacotes-de-viagem-style.png" />
-                  <span>Pacotes de Viagem</span>
+                <a href="#" className="flex flex-col items-center gap-1">
+                  <img src="pacotes-de-viagem-style.png" className="w-[clamp(50%,30vw,200px)]" />
+                  <span className="text-center text-2xl font-semibold">Pacotes de Viagem</span>
                 </a>
               </li>
             </ul>
           </section>
           {/* Check Everything that Happened */}
-          <section></section>
         </div>
 
         {/* Lolla is Global */}
