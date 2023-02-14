@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/lalezar": "^4.5.10",
     "@next/font": "13.1.6",
     "@radix-ui/react-dialog": "^1.0.2",
     "@radix-ui/react-navigation-menu": "^1.1.1",

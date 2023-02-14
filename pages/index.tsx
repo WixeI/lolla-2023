@@ -151,7 +151,9 @@ export default function Home() {
         {/* Our Products Section */}
         <div className="bg-[#03af99] pt-[min(20vw,8rem)]">
           <section className="container mx-auto">
-            <h1>Conheça Nossos Produtos</h1>
+            <h1 className="font-outline-1 font-lalezar text-4xl text-white drop-shadow-[3px_3px_0px_black]">
+              Conheça Nossos Produtos
+            </h1>
             <ul>
               <li>
                 <a href="#">
