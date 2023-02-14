@@ -149,10 +149,10 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="bg-[#03af99] pt-[min(20vw,6rem)]">
+        <div className="bg-[#03af99] pt-[min(20vw,8rem)]">
           {/* Our Products Section */}
-          <section className="container mx-auto mb-16">
-            <h1 className="font-outline-1 mb-8 text-center font-lalezar text-[clamp(2rem,6vw,3.5rem)] uppercase leading-none text-white drop-shadow-[3px_3px_0px_black]">
+          <section className="container mx-auto mb-[min(10vw,8rem)]">
+            <h1 className="font-outline-1 mb-16 text-center font-lalezar text-[clamp(2rem,6vw,3.5rem)] uppercase leading-none text-white drop-shadow-[3px_3px_0px_black]">
               Conheça nossos produtos
             </h1>
             <ul className="mx-[12.5%] grid justify-center gap-[clamp(1rem,5vw,3rem)] sm:grid-cols-3 xl:mx-[18%]">
@@ -177,8 +177,22 @@ export default function Home() {
             </ul>
           </section>
           {/* Check Everything that Happened */}
+          <section className="center container mx-auto">
+            <h1 className="font-outline-1 mb-8 text-center font-lalezar text-[clamp(2rem,6vw,3.5rem)] uppercase leading-none text-white drop-shadow-[3px_3px_0px_black]">
+              Confira tudo que rolou
+              <br />
+              no #Lollabr 2022
+            </h1>
+            <iframe
+              className="mx-auto"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-j6pmPwlCkg"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+            ></iframe>
+          </section>
         </div>
-
         {/* Lolla is Global */}
         {/* Footer */}
       </main>
