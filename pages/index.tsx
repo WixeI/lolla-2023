@@ -2,8 +2,6 @@ import Head from "next/head";
 import { RxHamburgerMenu, RxCrossCircled } from "react-icons/rx";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import * as Dialog from "@radix-ui/react-dialog";
-import styles from "../styles/Home.module.css";
-import { Fragment } from "react";
 import { TfiWorld } from "react-icons/tfi";
 import { HiChevronDoubleRight } from "react-icons/hi";
 
