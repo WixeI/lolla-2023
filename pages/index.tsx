@@ -179,7 +179,7 @@ export default function Home() {
             </ul>
           </section>
           {/* Check Everything that Happened */}
-          <section className="center container mx-auto">
+          <section className="center container mx-auto pb-[min(10vw,4rem)]">
             <h1 className="font-outline-1 mb-8 text-center font-lalezar text-[clamp(2rem,6vw,3.5rem)] uppercase leading-none text-white drop-shadow-[3px_3px_0px_black]">
               Confira tudo que rolou
               <br />
