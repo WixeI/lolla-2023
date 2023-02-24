@@ -183,14 +183,22 @@ export default function Home() {
               <br />
               no #Lollabr 2022
             </h1>
-            <iframe
-              className="mx-auto"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/-j6pmPwlCkg"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
-            ></iframe>
+            <div className="relative mx-auto w-full sm:w-3/4 xl:w-3/5 ">
+              <img
+                src="icon-peace.png"
+                className="absolute left-0 top-1/2 hidden w-[clamp(96px,10vw,140px)] -translate-x-2/3 -translate-y-1/2 sm:inline"
+              />
+              <iframe
+                className="aspect-video w-full"
+                src="https://www.youtube.com/embed/-j6pmPwlCkg"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+              ></iframe>
+              <img
+                src="icon-rock-hand.png"
+                className="absolute right-0 top-1/2 hidden w-[clamp(96px,10vw,140px)] translate-x-2/3 -translate-y-1/2 sm:inline"
+              />
+            </div>
           </section>
         </div>
         {/* Lolla is Global */}
