@@ -4,6 +4,7 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import * as Dialog from "@radix-ui/react-dialog";
 import styles from "../styles/Home.module.css";
 import { Fragment } from "react";
+import { TfiWorld } from "react-icons/tfi";
 
 export default function Home() {
   return (
@@ -202,6 +203,12 @@ export default function Home() {
           </section>
         </div>
         {/* Lolla is Global */}
+        <section className="flex justify-between bg-neutral-800 p-4 text-white md:justify-center md:gap-12">
+          <div className="flex items-center gap-2 text-2xl font-bold tracking-tight">
+            <TfiWorld /> <h1>Lolla é Global</h1>
+          </div>
+          <button className="w-[min(50%,20rem)] rounded-lg bg-violet-500 py-2 px-6">Faça o Tour</button>
+        </section>
         {/* Footer */}
       </main>
     </>
