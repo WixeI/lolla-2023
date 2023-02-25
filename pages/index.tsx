@@ -202,13 +202,15 @@ export default function Home() {
           </section>
         </div>
         {/* Lolla is Global */}
-        <section className="flex flex-col items-center gap-5 bg-neutral-800 py-8 text-white sm:flex-row sm:justify-between sm:p-4 md:justify-around">
-          <div className="flex flex-col items-center gap-3 text-2xl font-bold tracking-tight sm:flex-row sm:items-center sm:gap-2">
-            <TfiWorld /> <h1>Lolla é Global</h1>
+        <section className="bg-neutral-800 text-white">
+          <div className="mx-auto flex max-w-screen-lg flex-col items-center gap-5 sm:flex-row sm:justify-between sm:p-4 md:justify-around">
+            <div className="flex flex-col items-center gap-3 text-2xl font-bold tracking-tight sm:flex-row sm:items-center sm:gap-2">
+              <TfiWorld /> <h1>Lolla é Global</h1>
+            </div>
+            <button className="flex w-[min(60%,20rem)] items-center justify-center gap-1 rounded-lg bg-purple-500 py-2 px-6 font-bold">
+              <span>Faça o Tour</span> <HiChevronDoubleRight className="relative top-[1px] inline text-xl" />
+            </button>
           </div>
-          <button className="flex w-[min(60%,20rem)] items-center justify-center gap-1 rounded-lg bg-purple-500 py-2 px-6 font-bold">
-            <span>Faça o Tour</span> <HiChevronDoubleRight className="relative top-[1px] inline text-xl" />
-          </button>
         </section>
       </main>
       {/* Footer */}
