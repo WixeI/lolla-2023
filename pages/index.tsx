@@ -210,8 +210,73 @@ export default function Home() {
             <span>Faça o Tour</span> <HiChevronDoubleRight className="relative top-[1px] inline text-xl" />
           </button>
         </section>
-        {/* Footer */}
       </main>
+      {/* Footer */}
+      <footer className="grid grid-cols-1 gap-4">
+        <section>
+          <h1>Festival</h1>
+          <ul>
+            <li>
+              <a>Parceiros</a>
+            </li>
+            <li>
+              <a>Imprensa</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h1>Ajuda</h1>
+          <ul>
+            <li>
+              <a>Contato</a>
+            </li>
+            <li>
+              <a>Informações</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h1>Social</h1>
+          <ul>
+            <li>
+              <a>Youtube</a>
+            </li>
+            <li>
+              <a>TikTok</a>
+            </li>
+            <li>
+              <a>Instagram</a>
+            </li>
+            <li>
+              <a>Facebook</a>
+            </li>
+            <li>
+              <a>Twitter</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h1>Inscreva-se para receber informações sobre nossos eventos</h1>
+          {/* Put onSubmit to not update page & deliver Status Toast with request response */}
+          <form>
+            <input type="email" placeholder="Email" maxLength={256} required />
+            <label>
+              <input type="checkbox" required />
+              <span>
+                Li, estou ciente e de acordo com a{" "}
+                <a
+                  href="https://ticketsforfun.com.br/politicas/politica-de-privacidade"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  política de privacidade
+                </a>
+              </span>
+            </label>
+            <button type="submit">Assine Já!</button>
+          </form>
+        </section>
+      </footer>
     </>
   );
 }
