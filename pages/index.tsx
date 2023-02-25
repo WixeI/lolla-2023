@@ -212,8 +212,8 @@ export default function Home() {
         </section>
       </main>
       {/* Footer */}
-      <footer className="bg-black py-8 px-6 text-white">
-        <div className="grid grid-cols-1 gap-8 pb-8">
+      <footer className="bg-black py-8 px-6 text-white sm:p-10">
+        <div className="grid max-w-screen-lg grid-cols-1 gap-8 pb-8 sm:grid-cols-4 sm:gap-0 md:mx-auto">
           <section>
             <h1 className="mb-2 text-lg font-bold">Festival</h1>
             <ul className="flex flex-col gap-2">
@@ -257,7 +257,7 @@ export default function Home() {
             </ul>
           </section>
           <section>
-            <h1 className="mb-4 font-bold">Inscreva-se para receber informações sobre nossos eventos</h1>
+            <h1 className="mb-4 font-bold sm:font-normal">Inscreva-se para receber informações sobre nossos eventos</h1>
             {/* Put onSubmit to not update page & deliver Status Toast with request response */}
             <form className="flex flex-col items-start gap-4">
               <input
@@ -288,7 +288,7 @@ export default function Home() {
         </div>
         <section className="border-t border-neutral-500 pt-8">
           <h1 className="sr-only mb-2 text-lg font-bold">Informações Adicionais</h1>
-          <ul className="flex flex-col gap-2">
+          <ul className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4">
             <li>© Lollapalooza, LLC</li>
             <li>
               <a href="#">Privacidade</a>
