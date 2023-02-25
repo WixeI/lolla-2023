@@ -202,8 +202,8 @@ export default function Home() {
           </section>
         </div>
         {/* Lolla is Global */}
-        <section className="bg-neutral-800 text-white">
-          <div className="mx-auto flex max-w-screen-lg flex-col items-center gap-5 sm:flex-row sm:justify-between sm:p-4 md:justify-around">
+        <section className="bg-neutral-800 text-white sm:py-0">
+          <div className="mx-auto flex max-w-screen-lg flex-col items-center gap-5 py-6 sm:flex-row sm:justify-between sm:p-4 md:justify-around">
             <div className="flex flex-col items-center gap-3 text-2xl font-bold tracking-tight sm:flex-row sm:items-center sm:gap-2">
               <TfiWorld /> <h1>Lolla é Global</h1>
             </div>
