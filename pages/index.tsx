@@ -212,69 +212,95 @@ export default function Home() {
         </section>
       </main>
       {/* Footer */}
-      <footer className="grid grid-cols-1 gap-4">
-        <section>
-          <h1>Festival</h1>
-          <ul>
+      <footer className="bg-black py-8 px-6 text-white">
+        <div className="grid grid-cols-1 gap-8 pb-8">
+          <section>
+            <h1 className="mb-2 text-lg font-bold">Festival</h1>
+            <ul className="flex flex-col gap-2">
+              <li>
+                <a href="#">Parceiros</a>
+              </li>
+              <li>
+                <a href="#">Imprensa</a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h1 className="mb-2 text-lg font-bold">Ajuda</h1>
+            <ul className="flex flex-col gap-2">
+              <li>
+                <a href="#">Contato</a>
+              </li>
+              <li>
+                <a href="#">Informações</a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h1 className="mb-2 text-lg font-bold">Social</h1>
+            <ul className="flex flex-col gap-2">
+              <li>
+                <a href="#">Youtube</a>
+              </li>
+              <li>
+                <a href="#">TikTok</a>
+              </li>
+              <li>
+                <a href="#">Instagram</a>
+              </li>
+              <li>
+                <a href="#">Facebook</a>
+              </li>
+              <li>
+                <a href="#">Twitter</a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h1 className="mb-2 text-lg font-bold">Inscreva-se para receber informações sobre nossos eventos</h1>
+            {/* Put onSubmit to not update page & deliver Status Toast with request response */}
+            <form>
+              <input type="email" placeholder="Email" maxLength={256} required />
+              <label>
+                <input type="checkbox" required />
+                <span>
+                  Li, estou ciente e de acordo com a{" "}
+                  <a
+                    href="https://ticketsforfun.com.br/politicas/politica-de-privacidade"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    política de privacidade
+                  </a>
+                </span>
+              </label>
+              <button type="submit">Assine Já!</button>
+            </form>
+          </section>
+        </div>
+        <section className="border-t border-neutral-500 pt-8">
+          <h1 className="sr-only mb-2 text-lg font-bold">Informações Adicionais</h1>
+          <ul className="flex flex-col gap-2">
+            <li>© Lollapalooza, LLC</li>
             <li>
-              <a>Parceiros</a>
+              <a href="#">Privacidade</a>
             </li>
             <li>
-              <a>Imprensa</a>
+              <a href="#">Termos & Condições</a>
+            </li>
+            <li>
+              <a href="#">Não Venda Minha Informação</a>
+            </li>
+            <li>
+              <a href="#">LGPD</a>
+            </li>
+            <li>
+              <a href="#">Alvará</a>
+            </li>
+            <li>
+              <a href="#">AVCB</a>
             </li>
           </ul>
-        </section>
-        <section>
-          <h1>Ajuda</h1>
-          <ul>
-            <li>
-              <a>Contato</a>
-            </li>
-            <li>
-              <a>Informações</a>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h1>Social</h1>
-          <ul>
-            <li>
-              <a>Youtube</a>
-            </li>
-            <li>
-              <a>TikTok</a>
-            </li>
-            <li>
-              <a>Instagram</a>
-            </li>
-            <li>
-              <a>Facebook</a>
-            </li>
-            <li>
-              <a>Twitter</a>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h1>Inscreva-se para receber informações sobre nossos eventos</h1>
-          {/* Put onSubmit to not update page & deliver Status Toast with request response */}
-          <form>
-            <input type="email" placeholder="Email" maxLength={256} required />
-            <label>
-              <input type="checkbox" required />
-              <span>
-                Li, estou ciente e de acordo com a{" "}
-                <a
-                  href="https://ticketsforfun.com.br/politicas/politica-de-privacidade"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  política de privacidade
-                </a>
-              </span>
-            </label>
-            <button type="submit">Assine Já!</button>
-          </form>
         </section>
       </footer>
     </>
