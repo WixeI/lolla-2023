@@ -257,14 +257,20 @@ export default function Home() {
             </ul>
           </section>
           <section>
-            <h1 className="mb-2 text-lg font-bold">Inscreva-se para receber informações sobre nossos eventos</h1>
+            <h1 className="mb-4 font-bold">Inscreva-se para receber informações sobre nossos eventos</h1>
             {/* Put onSubmit to not update page & deliver Status Toast with request response */}
-            <form>
-              <input type="email" placeholder="Email" maxLength={256} required />
-              <label>
-                <input type="checkbox" required />
-                <span>
-                  Li, estou ciente e de acordo com a{" "}
+            <form className="flex flex-col items-start gap-4">
+              <input
+                type="email"
+                placeholder="Email"
+                maxLength={256}
+                required
+                className="w-[min(100%,48ch)] rounded-sm p-2 text-black"
+              />
+              <label className="cursor-pointer">
+                <input type="checkbox" required className="mr-1" />
+                <span className="text-sm">
+                  Li, estou ciente e de acordo com a
                   <a
                     href="https://ticketsforfun.com.br/politicas/politica-de-privacidade"
                     target="_blank"
@@ -274,7 +280,9 @@ export default function Home() {
                   </a>
                 </span>
               </label>
-              <button type="submit">Assine Já!</button>
+              <button type="submit" className="inline rounded-full bg-white py-2 px-6 font-semibold text-black">
+                Assine Já!
+              </button>
             </form>
           </section>
         </div>
