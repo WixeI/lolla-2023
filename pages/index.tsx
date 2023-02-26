@@ -14,7 +14,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="no-flow-x-center fixed z-10 flex w-full items-center justify-between bg-white py-2 px-4 drop-shadow-lg md:container md:mx-auto md:mt-2">
+      <header className="no-flow-x-center fixed z-10 flex w-full items-center justify-between rounded-sm bg-white py-2 px-4 drop-shadow-lg md:container md:mx-auto md:mt-2">
         {/* Information */}
         <div className="flex items-center gap-3">
           <img className="h-[min(2.5rem,_10vw)]" src="/logo-lolla.png" alt="Lollapalooza 10ª Edição Brasil" />
@@ -152,36 +152,36 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="bg-[#03af99] pt-[min(20vw,8rem)]">
+        <div className="bg-[#03af99] pt-[min(15vw,5rem)]">
           {/* Our Products Section */}
-          <section className="container mx-auto mb-[min(10vw,8rem)]">
-            <h1 className="font-outline-1 mb-16 text-center font-lalezar text-[clamp(2rem,6vw,3.5rem)] uppercase leading-none text-white drop-shadow-[3px_3px_0px_black]">
+          <section className="container mx-auto mb-[min(10vw,5rem)]">
+            <h1 className="font-outline-1 mb-12 text-center font-lalezar text-[clamp(2rem,6vw,3rem)] uppercase leading-none text-white drop-shadow-[3px_3px_0px_black]">
               Conheça nossos produtos
             </h1>
             <ul className="mx-[12.5%] grid justify-center gap-[clamp(1rem,5vw,3rem)] sm:grid-cols-3 xl:mx-[18%]">
               <li>
-                <a href="#" className="flex flex-col items-center gap-1">
+                <a href="#" className="flex flex-col items-center gap-2">
                   <img src="merch-style.png" alt="" className="w-[clamp(50%,30vw,200px)]" />
-                  <span className="text-center text-2xl font-semibold">Merch</span>
+                  <span className="text-center text-3xl font-bold leading-6">Merch</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="flex flex-col items-center gap-1">
+                <a href="#" className="flex flex-col items-center gap-2">
                   <img src="lolla-lockers-style.png" alt="" className="w-[clamp(50%,30vw,200px)]" />
-                  <span className="text-center text-2xl font-semibold">Lolla Lockers</span>
+                  <span className="text-center text-3xl font-bold leading-6">Lolla Lockers</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="flex flex-col items-center gap-1">
+                <a href="#" className="flex flex-col items-center gap-2">
                   <img src="pacotes-de-viagem-style.png" alt="" className="w-[clamp(50%,30vw,200px)]" />
-                  <span className="text-center text-2xl font-semibold">Pacotes de Viagem</span>
+                  <span className="text-center text-3xl font-bold leading-6">Pacotes de Viagem</span>
                 </a>
               </li>
             </ul>
           </section>
           {/* Check Everything that Happened */}
           <section className="center container mx-auto pb-[min(10vw,4rem)]">
-            <h1 className="font-outline-1 mb-8 text-center font-lalezar text-[clamp(2rem,6vw,3.5rem)] uppercase leading-none text-white drop-shadow-[3px_3px_0px_black]">
+            <h1 className="font-outline-1 mb-8 text-center font-lalezar text-[clamp(2rem,6vw,3rem)] uppercase leading-[90%] leading-none text-white drop-shadow-[3px_3px_0px_black]">
               Confira tudo que rolou
               <br />
               no #Lollabr 2022
