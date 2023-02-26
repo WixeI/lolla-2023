@@ -69,9 +69,11 @@ export default function Home() {
         </Dialog.Root>
         {/* Desktop Navigation Menu */}
         <NavigationMenu.Root className="hidden lg:inline">
-          <NavigationMenu.List className="flex space-x-4">
+          <NavigationMenu.List className="flex items-center space-x-4">
             <NavigationMenu.Item>
-              <NavigationMenu.Trigger>Produtos</NavigationMenu.Trigger>
+              <NavigationMenu.Trigger className="py-2 font-semibold hover:text-rose-600">
+                Produtos
+              </NavigationMenu.Trigger>
               <NavigationMenu.Content className="absolute">
                 <ul>
                   <li>
@@ -94,7 +96,9 @@ export default function Home() {
             </NavigationMenu.Item>
 
             <NavigationMenu.Item>
-              <NavigationMenu.Trigger>Informações</NavigationMenu.Trigger>
+              <NavigationMenu.Trigger className="py-2 font-semibold hover:text-rose-600">
+                Informações
+              </NavigationMenu.Trigger>
               <NavigationMenu.Content className="absolute">
                 <ul>
                   <li>
@@ -108,7 +112,9 @@ export default function Home() {
             </NavigationMenu.Item>
 
             <NavigationMenu.Item>
-              <NavigationMenu.Trigger>Experiência</NavigationMenu.Trigger>
+              <NavigationMenu.Trigger className="py-2 font-semibold hover:text-rose-600">
+                Experiência
+              </NavigationMenu.Trigger>
               <NavigationMenu.Content className="absolute">
                 <ul>
                   <li>
@@ -119,7 +125,12 @@ export default function Home() {
             </NavigationMenu.Item>
 
             <NavigationMenu.Item>
-              <NavigationMenu.Link href="https://github.com/radix-ui">Contato</NavigationMenu.Link>
+              <NavigationMenu.Link
+                href="https://github.com/radix-ui"
+                className="py-2 font-semibold hover:text-rose-600"
+              >
+                Contato
+              </NavigationMenu.Link>
             </NavigationMenu.Item>
 
             <NavigationMenu.Item>
