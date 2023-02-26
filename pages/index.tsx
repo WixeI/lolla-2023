@@ -134,18 +134,20 @@ export default function Home() {
         <section className="bg-[url('/background-blue-sun.jpg')] bg-fixed bg-center pt-[clamp(5rem,15vw,8rem)]">
           {/* Announcement & Lineup */}
           <div className="container mx-auto mb-8 xl:px-[10vw]">
-            <img src="header-content-1080p.png" className="mx-auto mb-[clamp(2rem,8vw,4rem)]" />
+            <img src="header-content-1080p.png" alt="" className="mx-auto mb-[clamp(2rem,8vw,4rem)]" />
             <div className="mx-auto grid grid-cols-7 content-center px-4 pb-4">
-              <img src="lineup-style-left.png" className="hidden sm:block" />
+              <img src="lineup-style-left.png" alt="" className="hidden sm:block" />
               <img src="lineup-content.png" className="col-span-full justify-self-center sm:col-span-5" />
-              <img src="lineup-style-right.png" className="hidden sm:block" />
+              {/* Lineup Only for SR */}
+              <div className="sr-only"></div>
+              <img src="lineup-style-right.png" alt="" className="hidden sm:block" />
             </div>
           </div>
           {/* City BG & Section Divider */}
           <div className="h-36 bg-[url('/background-row-city.png')] bg-top bg-repeat-x" />
           <div className="relative flex h-1 items-center justify-center gap-[30%] bg-[#00A5D9] bg-[url('/bg-line-divider.png')] bg-cover bg-repeat-x md:h-2">
-            <img src="icon-rollerskates.png" className="mb-8 h-[min(25vw,7rem)]" />
-            <img src="icon-old-player.png" className="hidden h-[min(20vw,4.5rem)] sm:block" />
+            <img src="icon-rollerskates.png" alt="" className="mb-8 h-[min(25vw,7rem)]" />
+            <img src="icon-old-player.png" alt="" className="hidden h-[min(20vw,4.5rem)] sm:block" />
           </div>
         </section>
 
@@ -158,19 +160,19 @@ export default function Home() {
             <ul className="mx-[12.5%] grid justify-center gap-[clamp(1rem,5vw,3rem)] sm:grid-cols-3 xl:mx-[18%]">
               <li>
                 <a href="#" className="flex flex-col items-center gap-1">
-                  <img src="merch-style.png" className="w-[clamp(50%,30vw,200px)]" />
+                  <img src="merch-style.png" alt="" className="w-[clamp(50%,30vw,200px)]" />
                   <span className="text-center text-2xl font-semibold">Merch</span>
                 </a>
               </li>
               <li>
                 <a href="#" className="flex flex-col items-center gap-1">
-                  <img src="lolla-lockers-style.png" className="w-[clamp(50%,30vw,200px)]" />
+                  <img src="lolla-lockers-style.png" alt="" className="w-[clamp(50%,30vw,200px)]" />
                   <span className="text-center text-2xl font-semibold">Lolla Lockers</span>
                 </a>
               </li>
               <li>
                 <a href="#" className="flex flex-col items-center gap-1">
-                  <img src="pacotes-de-viagem-style.png" className="w-[clamp(50%,30vw,200px)]" />
+                  <img src="pacotes-de-viagem-style.png" alt="" className="w-[clamp(50%,30vw,200px)]" />
                   <span className="text-center text-2xl font-semibold">Pacotes de Viagem</span>
                 </a>
               </li>
@@ -186,6 +188,7 @@ export default function Home() {
             <div className="relative mx-auto w-full sm:w-3/4 xl:w-3/5 ">
               <img
                 src="icon-peace.png"
+                alt=""
                 className="absolute left-0 top-1/2 hidden w-[clamp(96px,10vw,140px)] -translate-x-2/3 -translate-y-1/2 sm:inline"
               />
               <iframe
@@ -196,6 +199,7 @@ export default function Home() {
               ></iframe>
               <img
                 src="icon-rock-hand.png"
+                alt=""
                 className="absolute right-0 top-1/2 hidden w-[clamp(96px,10vw,140px)] translate-x-2/3 -translate-y-1/2 sm:inline"
               />
             </div>
