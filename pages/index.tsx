@@ -123,7 +123,12 @@ export default function Home() {
             </NavigationMenu.Item>
 
             <NavigationMenu.Item>
-              <NavigationMenu.Link href="https://github.com/radix-ui">Ingressos</NavigationMenu.Link>
+              <NavigationMenu.Link
+                href="https://github.com/radix-ui"
+                className="rounded-full border-2 border-black bg-red-600 px-6 py-2 font-bold uppercase text-white drop-shadow-[3px_3px_0px_black] hover:bg-black"
+              >
+                Ingressos
+              </NavigationMenu.Link>
             </NavigationMenu.Item>
           </NavigationMenu.List>
         </NavigationMenu.Root>
