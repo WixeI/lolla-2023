@@ -5,6 +5,14 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { TfiWorld } from "react-icons/tfi";
 import { HiChevronDoubleRight } from "react-icons/hi";
 
+function DivDaora ({nota, hasHeader}: {nota: string, hasHeader: boolean}) {
+  let banana = "banana"
+  return <div>
+    {hasHeader && <header>Header Daora</header>}
+    Daora {banana}
+    </div>
+}
+
 export default function Home() {
   return (
     <>
@@ -14,6 +22,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <DivDaora nota="0" hasHeader={true} />
       <header className="no-flow-x-center fixed z-10 flex w-full items-center justify-between rounded-sm bg-white py-2 px-4 drop-shadow-lg md:container md:mx-auto md:mt-2">
         {/* Information */}
         <div className="flex items-center gap-3">
@@ -136,7 +145,7 @@ export default function Home() {
             <NavigationMenu.Item>
               <NavigationMenu.Link
                 href="https://github.com/radix-ui"
-                className="rounded-full border-2 border-black bg-red-600 px-6 py-2 font-bold uppercase text-white drop-shadow-[3px_3px_0px_black] hover:bg-black"
+                className="rounded-full border-2 border-black bg-red-600 px-6 py-2 font-bold uppercase text-white drop-shadow-[3px_3px_0px_black] hover:brightness-[0.8]"
               >
                 Ingressos
               </NavigationMenu.Link>
@@ -228,7 +237,7 @@ export default function Home() {
             <div className="flex flex-col items-center gap-3 text-2xl font-bold tracking-tight sm:flex-row sm:items-center sm:gap-2">
               <TfiWorld /> <h1>Lolla é Global</h1>
             </div>
-            <button className="flex w-[min(60%,20rem)] items-center justify-center gap-1 rounded-lg bg-purple-500 py-2 px-6 font-bold">
+            <button className="flex w-[min(60%,20rem)] items-center justify-center gap-1 rounded-lg bg-purple-500 py-2 px-6 font-bold hover:brightness-[0.8]">
               <span>Faça o Tour</span> <HiChevronDoubleRight className="relative top-[1px] inline text-xl" />
             </button>
           </div>
