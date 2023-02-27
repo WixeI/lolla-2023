@@ -74,7 +74,7 @@ export default function Home() {
               <NavigationMenu.Trigger className="py-2 font-semibold hover:text-rose-600">
                 Produtos
               </NavigationMenu.Trigger>
-              <NavigationMenu.Content className="absolute">
+              <NavigationMenu.Content className="absolute rounded-sm bg-white p-3  shadow-[0_0_0.5rem_rgba(0,0,0,0.2)]">
                 <ul>
                   <li>
                     <NavigationMenu.Link href="#">Merchan</NavigationMenu.Link>
@@ -99,7 +99,7 @@ export default function Home() {
               <NavigationMenu.Trigger className="py-2 font-semibold hover:text-rose-600">
                 Informações
               </NavigationMenu.Trigger>
-              <NavigationMenu.Content className="absolute">
+              <NavigationMenu.Content className="absolute rounded-sm bg-white p-3  shadow-[0_0_0.5rem_rgba(0,0,0,0.2)]">
                 <ul>
                   <li>
                     <NavigationMenu.Link href="https://github.com/radix-ui">FAQ</NavigationMenu.Link>
@@ -115,7 +115,7 @@ export default function Home() {
               <NavigationMenu.Trigger className="py-2 font-semibold hover:text-rose-600">
                 Experiência
               </NavigationMenu.Trigger>
-              <NavigationMenu.Content className="absolute">
+              <NavigationMenu.Content className="absolute rounded-sm bg-white p-3  shadow-[0_0_0.5rem_rgba(0,0,0,0.2)]">
                 <ul>
                   <li>
                     <NavigationMenu.Link href="https://github.com/radix-ui">O Festival</NavigationMenu.Link>
