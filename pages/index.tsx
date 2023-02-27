@@ -185,19 +185,19 @@ export default function Home() {
             </h1>
             <ul className="mx-[12.5%] grid justify-center gap-[clamp(1rem,5vw,3rem)] sm:grid-cols-3 xl:mx-[18%]">
               <li>
-                <a href="#" className="flex flex-col items-center gap-2">
+                <a href="https://merch.com.br/lollastore/" className="flex flex-col items-center gap-2">
                   <img src="merch-style.png" alt="" className="w-[clamp(50%,30vw,200px)]" />
                   <span className="text-center text-3xl font-bold leading-6">Merch</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="flex flex-col items-center gap-2">
+                <a href="https://lollapalooza.crmocs.com.br/" className="flex flex-col items-center gap-2">
                   <img src="lolla-lockers-style.png" alt="" className="w-[clamp(50%,30vw,200px)]" />
                   <span className="text-center text-3xl font-bold leading-6">Lolla Lockers</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="flex flex-col items-center gap-2">
+                <a href="https://www.eventos.com.br/tag/lollapalooza-2023" className="flex flex-col items-center gap-2">
                   <img src="pacotes-de-viagem-style.png" alt="" className="w-[clamp(50%,30vw,200px)]" />
                   <span className="text-center text-3xl font-bold leading-6">Pacotes de Viagem</span>
                 </a>
