@@ -7,3 +7,4 @@
 - Criar Lista sr-only com Lineup do Lolla
 - Adicionar Alts para imagens e colocar alt="" para imagens decorativas (para não atrapalhar)
 - meme
+- mene
