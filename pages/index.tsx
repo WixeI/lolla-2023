@@ -44,27 +44,27 @@ export default function Home() {
               <ul>
                 <li>
                   <Dialog.Close>
-                    <a href="#">Merchan</a>
+                    <a href="https://merch.com.br/lollastore/">Merchan</a>
                   </Dialog.Close>
                 </li>
                 <li>
                   <Dialog.Close>
-                    <a href="#">Lockers</a>
+                    <a href="https://lollapalooza.crmocs.com.br/">Lockers</a>
                   </Dialog.Close>
                 </li>
                 <li>
                   <Dialog.Close>
-                    <a href="#">Pacotes de Viagem</a>
+                    <a href="https://www.eventos.com.br/tag/lollapalooza-2023">Pacotes de Viagem</a>
                   </Dialog.Close>
                 </li>
                 <li>
                   <Dialog.Close>
-                    <a href="#">Transfer</a>
+                    <a href="https://www.eventos.com.br/tag/lollapalooza-2023">Transfer</a>
                   </Dialog.Close>
                 </li>
                 <li>
                   <Dialog.Close>
-                    <a href="#">Slideshows</a>
+                    <a href="https://sales.ticketsforfun.com.br/#/ticket/">Slideshows</a>
                   </Dialog.Close>
                 </li>
               </ul>
@@ -86,19 +86,19 @@ export default function Home() {
               <NavigationMenu.Content className="absolute rounded-sm bg-white p-3  shadow-[0_0_0.5rem_rgba(0,0,0,0.2)]">
                 <ul>
                   <li>
-                    <NavigationMenu.Link href="#">Merchan</NavigationMenu.Link>
+                    <NavigationMenu.Link href="https://merch.com.br/lollastore/">Merchan</NavigationMenu.Link>
                   </li>
                   <li>
-                    <NavigationMenu.Link href="#">Lockers</NavigationMenu.Link>
+                    <NavigationMenu.Link href="https://lollapalooza.crmocs.com.br/">Lockers</NavigationMenu.Link>
                   </li>
                   <li>
-                    <NavigationMenu.Link href="#">Pacotes de Viagem</NavigationMenu.Link>
+                    <NavigationMenu.Link href="https://www.eventos.com.br/tag/lollapalooza-2023">Pacotes de Viagem</NavigationMenu.Link>
                   </li>
                   <li>
-                    <NavigationMenu.Link href="#">Transfer</NavigationMenu.Link>
+                    <NavigationMenu.Link href="https://www.eventos.com.br/tag/lollapalooza-2023">Transfer</NavigationMenu.Link>
                   </li>
                   <li>
-                    <NavigationMenu.Link href="#">Slideshows</NavigationMenu.Link>
+                    <NavigationMenu.Link href="https://sales.ticketsforfun.com.br/#/ticket/">Slideshows</NavigationMenu.Link>
                   </li>
                 </ul>
               </NavigationMenu.Content>
@@ -111,10 +111,10 @@ export default function Home() {
               <NavigationMenu.Content className="absolute rounded-sm bg-white p-3  shadow-[0_0_0.5rem_rgba(0,0,0,0.2)]">
                 <ul>
                   <li>
-                    <NavigationMenu.Link href="https://github.com/radix-ui">FAQ</NavigationMenu.Link>
+                    <NavigationMenu.Link href="https://www.lollapaloozabr.com/information">FAQ</NavigationMenu.Link>
                   </li>
                   <li>
-                    <NavigationMenu.Link href="https://github.com/radix-ui">Entrada Social</NavigationMenu.Link>
+                    <NavigationMenu.Link href="https://www.lollapaloozabr.com/entrada-social">Entrada Social</NavigationMenu.Link>
                   </li>
                 </ul>
               </NavigationMenu.Content>
@@ -127,7 +127,7 @@ export default function Home() {
               <NavigationMenu.Content className="absolute rounded-sm bg-white p-3  shadow-[0_0_0.5rem_rgba(0,0,0,0.2)]">
                 <ul>
                   <li>
-                    <NavigationMenu.Link href="https://github.com/radix-ui">O Festival</NavigationMenu.Link>
+                    <NavigationMenu.Link href="https://www.lollapaloozabr.com/o-festival">O Festival</NavigationMenu.Link>
                   </li>
                 </ul>
               </NavigationMenu.Content>{" "}
@@ -135,7 +135,7 @@ export default function Home() {
 
             <NavigationMenu.Item>
               <NavigationMenu.Link
-                href="https://github.com/radix-ui"
+                href="https://www.lollapaloozabr.com/contact"
                 className="py-2 font-semibold hover:text-rose-600"
               >
                 Contato
@@ -144,7 +144,7 @@ export default function Home() {
 
             <NavigationMenu.Item>
               <NavigationMenu.Link
-                href="https://github.com/radix-ui"
+                href="https://lollapalooza.sales.ticketsforfun.com.br/"
                 className="rounded-full border-2 border-black bg-red-600 px-6 py-2 font-bold uppercase text-white drop-shadow-[3px_3px_0px_black] hover:brightness-[0.8]"
               >
                 Ingressos
@@ -185,19 +185,19 @@ export default function Home() {
             </h1>
             <ul className="mx-[12.5%] grid justify-center gap-[clamp(1rem,5vw,3rem)] sm:grid-cols-3 xl:mx-[18%]">
               <li>
-                <a href="#" className="flex flex-col items-center gap-2">
+                <a href="https://merch.com.br/lollastore/" className="flex flex-col items-center gap-2">
                   <img src="merch-style.png" alt="" className="w-[clamp(50%,30vw,200px)]" />
                   <span className="text-center text-3xl font-bold leading-6">Merch</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="flex flex-col items-center gap-2">
+                <a href="https://lollapalooza.crmocs.com.br/" className="flex flex-col items-center gap-2">
                   <img src="lolla-lockers-style.png" alt="" className="w-[clamp(50%,30vw,200px)]" />
                   <span className="text-center text-3xl font-bold leading-6">Lolla Lockers</span>
                 </a>
               </li>
               <li>
-                <a href="#" className="flex flex-col items-center gap-2">
+                <a href="https://www.eventos.com.br/tag/lollapalooza-2023" className="flex flex-col items-center gap-2">
                   <img src="pacotes-de-viagem-style.png" alt="" className="w-[clamp(50%,30vw,200px)]" />
                   <span className="text-center text-3xl font-bold leading-6">Pacotes de Viagem</span>
                 </a>
@@ -250,10 +250,10 @@ export default function Home() {
             <h1 className="mb-2 text-lg font-bold">Festival</h1>
             <ul className="flex flex-col gap-2">
               <li>
-                <a href="#">Parceiros</a>
+                <a href="https://www.lollapaloozabr.com/partners">Parceiros</a>
               </li>
               <li>
-                <a href="#">Imprensa</a>
+                <a href="https://www.lollapaloozabr.com/imprensa">Imprensa</a>
               </li>
             </ul>
           </section>
@@ -261,10 +261,10 @@ export default function Home() {
             <h1 className="mb-2 text-lg font-bold">Ajuda</h1>
             <ul className="flex flex-col gap-2">
               <li>
-                <a href="#">Contato</a>
+                <a href="https://www.lollapaloozabr.com/contact">Contato</a>
               </li>
               <li>
-                <a href="#">Informações</a>
+                <a href="https://www.lollapaloozabr.com/information">Informações</a>
               </li>
             </ul>
           </section>
@@ -272,19 +272,19 @@ export default function Home() {
             <h1 className="mb-2 text-lg font-bold">Social</h1>
             <ul className="flex flex-col gap-2">
               <li>
-                <a href="#">Youtube</a>
+                <a href="https://www.youtube.com/lollapaloozabr">Youtube</a>
               </li>
               <li>
-                <a href="#">TikTok</a>
+                <a href="http://www.tiktok.com/@lollapaloozabr?">TikTok</a>
               </li>
               <li>
-                <a href="#">Instagram</a>
+                <a href="http://www.instagram.com/lollapaloozabr">Instagram</a>
               </li>
               <li>
-                <a href="#">Facebook</a>
+                <a href="http://www.facebook.com/LollapaloozaBR">Facebook</a>
               </li>
               <li>
-                <a href="#">Twitter</a>
+                <a href="http://twitter.com/lollapaloozabr">Twitter</a>
               </li>
             </ul>
           </section>
@@ -323,22 +323,22 @@ export default function Home() {
           <ul className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4">
             <li>© Lollapalooza, LLC</li>
             <li>
-              <a href="#">Privacidade</a>
+              <a href="https://ticketsforfun.com.br/politicas/politica-de-privacidade">Privacidade</a>
             </li>
             <li>
-              <a href="#">Termos & Condições</a>
+              <a href="https://ticketsforfun.com.br/politicas/termos-e-condicoes">Termos & Condições</a>
             </li>
             <li>
-              <a href="#">Não Venda Minha Informação</a>
+              <a href="https://www.lollapaloozabr.com/privacy">Não Venda Minha Informação</a>
             </li>
             <li>
-              <a href="#">LGPD</a>
+              <a href="https://www.ticketsforfun.com.br/politicas/acesso-aos-meus-dados">LGPD</a>
             </li>
             <li>
-              <a href="#">Alvará</a>
+              <a href="https://pub-images-t4f.s3.amazonaws.com/LOLLA2022/ALVARA_LOLLAPALOOZA_2022.pdf">Alvará</a>
             </li>
             <li>
-              <a href="#">AVCB</a>
+              <a href="https://pub-images-t4f.s3.amazonaws.com/LOLLA2022/AVCB_LOLLAPALOOZA_2022.pdf">AVCB</a>
             </li>
           </ul>
         </section>
